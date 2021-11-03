@@ -17,8 +17,8 @@ export const Routes = {
     Lock: { path: "/examples/lock" },
     NotFound: { path: "/examples/404" },
     ServerError: { path: "/examples/500" },
-
-    
+    HospitalStaff: {path: "/react-auth-ui/hospitalstaff"},
+    InsuranceCompany: {path: "/react-auth-ui/company"}
 
     
 };

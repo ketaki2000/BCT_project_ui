@@ -21,6 +21,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
 import App from '../App';
+import HospitalStaff from './staff';
+import InsuranceCompany from './company/Company';
 
 
 const RouteWithLoader = ({ component: Component, ...rest }) => {
@@ -86,7 +88,9 @@ export default () => (
     <RouteWithSidebar exact path={Routes.PendingInsurances.path} component={PendingInsurances} />
     <RouteWithSidebar exact path={Routes.ApprovedInsurances.path} component={ApprovedInsurances} />
     <RouteWithSidebar exact path={Routes.CreateInsurance.path} component={CreateInsurance} />
-    
+    <Route exact path={Routes.HospitalStaff.path} component={HospitalStaff} />
+
+    <Route exact path={Routes.InsuranceCompany.path} component={InsuranceCompany} />
 
     
 

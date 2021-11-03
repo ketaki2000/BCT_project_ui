@@ -44,11 +44,22 @@ function SignUpForm() {
   // render() {
     let history = useHistory();
   const routeHome = () => {
-    let path = '/createinsurance';
+    let path=""
+    if (role==="Patient"){
+      path = '/createinsurance';
+    }
+    else if(role==="Hospital Staff"){
+       path = '/hospitalstaff';
+    }
+    else{
+       path = '/company';
+    }
+    
     history.push(path);
   };
   function handleRoleChange(e) {
     setRole(e.target.value);
+    console.log(role)
   }
   return (
     <div className="formCenter">
