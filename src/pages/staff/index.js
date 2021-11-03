@@ -5,7 +5,7 @@ function HospitalStaff() {
   return (
     <div>
       <div className="App">
-        <Table striped bordered hover>
+        <Table striped bordered hover variant="dark">
           <thead>
             <tr>
               <th>Sr No.</th>
@@ -20,7 +20,11 @@ function HospitalStaff() {
               <td>1</td>
               <td>Mark</td>
               <td>Otto</td>
-              <td>@mdo</td>
+              <td>
+                <button type="submit" className="formFieldButton">
+                  View Image
+                </button>
+              </td>
               <td>
                 <div className="formField">
                   <button type="submit" className="formFieldButton">
@@ -36,7 +40,11 @@ function HospitalStaff() {
               <td>2</td>
               <td>Jacob</td>
               <td>Thornton</td>
-              <td>@fat</td>
+              <td>
+                <button type="submit" className="formFieldButton">
+                  View Image
+                </button>
+              </td>
               <td>
                 <div className="formField">
                   <button type="submit" className="formFieldButton">
@@ -51,7 +59,11 @@ function HospitalStaff() {
             <tr>
               <td>3</td>
               <td colSpan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <td>
+                <button type="submit" className="formFieldButton">
+                  View Image
+                </button>
+              </td>
               <td>
                 <div className="formField">
                   <button type="submit" className="formFieldButton">
