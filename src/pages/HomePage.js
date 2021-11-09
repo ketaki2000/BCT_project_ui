@@ -17,8 +17,8 @@ import ServerError from "./examples/ServerError";
 
 // components
 import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
+
 import Preloader from "../components/Preloader";
 import App from '../App';
 import HospitalStaff from './staff';
@@ -65,9 +65,9 @@ const RouteWithSidebar = ({ component: Component, ...rest }) => {
         <Sidebar />
 
         <main className="content">
-          <Navbar />
+          
           <Component {...props} />
-          <Footer toggleSettings={toggleSettings} showSettings={showSettings} />
+          
         </main>
       </>
     )}}

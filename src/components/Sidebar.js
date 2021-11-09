@@ -113,7 +113,7 @@ export default (props = {}) => {
 
               
               
-              <NavItem external title="Themesberg" link="https://themesberg.com" target="_blank" image={ThemesbergLogo} />
+              
                          </Nav>
           </div>
         </SimpleBar>

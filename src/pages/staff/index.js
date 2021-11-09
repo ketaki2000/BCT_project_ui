@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import "C:/Users/Ketaki/Desktop/bctprojectui-main/src/App.css";
+import "../../App.css";
 function HospitalStaff() {
   return (
     <div>

@@ -58,28 +58,14 @@ export const GeneralInfoForm = () => {
                 <FormLabel>Claim Amount</FormLabel>
                 <Form.Control required type="number" placeholder="0.0" />
             </Form.Group>
+            <Form.Group id="Claim Reason">
+                <Form.Label>Claim Reason</Form.Label>
+                <Form.Control required type="text" placeholder="Claim Reason" />
+              </Form.Group>
             <Row>
           <Form.Group id="fileupload" >
-          <div style={{align:'center'}} {...getRootProps()}>
-      <input {...getInputProps()} />
-      {
-        isDragActive ?
-          <div className="container">
-            <div className="drop-container">
-              <p>Drop the files here ...</p> 
-              
-            </div>
-          </div>   
-          :
-          <div className="container">
-            <div className="drop-container">
-              
-              <p>Drag 'n' drop some files here, or click to select files</p>
-            </div>
-          </div> 
-          
-      }
-    </div>
+            <FormLabel>Upload File</FormLabel>
+          <Form.Control type="file"/>
     
     </Form.Group>
     </Row>
